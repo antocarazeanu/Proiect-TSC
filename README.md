@@ -11,6 +11,7 @@ Cuprins:
 3. Arhitectura hardware
 4. Pini utilizați pe ESP32-C6 și justificare
 5. Probleme intampinate
+6. Observatii
 
 ## 0. Descriere Generală:
 Proiectul a avut ca scop realizarea unui Ebook Reader ieftin si OpenSource din
