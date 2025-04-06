@@ -8,7 +8,7 @@ Cuprins:
 0. Descrierea generala
 1. Diagrama bloc
 2. BOM - Bill of Materials
-3. Functionalitatea hardware
+3. Arhitectura hardware
 4. Pini utilizați pe ESP32-C6 și justificare
 5. Probleme intampinate
 
@@ -67,7 +67,6 @@ cu layout-ul PCB, modelare 3D și integrarea finală într-o carcasă.
 | W25Q512JVEIQ | W25Q512JVEIQ | [Link](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda) | [Link](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda) |
 | XC6220A331MR-G | XC6220A331MR-G | [Link](https://componentsearchengine.com/part-view/XC6220A331MR-G/Torex) | [Link](https://product.torexsemi.com/system/files/series/xc6220.pdf) |
 
-## 3. Functionalitatea hardware
 ## 3. Arhitectura Hardware
 
 Descriem în continuare componentele hardware cheie și funcționalitatea acestora în cadrul dispozitivului:
