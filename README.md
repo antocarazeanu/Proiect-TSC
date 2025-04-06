@@ -1,3 +1,26 @@
+## README - Proiect TSC 2025
+## Titlu Proiect: Ebook Reader
+## Nume: Carazeanu Antonio-Christian
+## Grupa: 332CC
+
+Cuprins:
+
+0. Descrierea generala
+1. Diagrama bloc
+2. BOM - Bill of Materials
+3. Functionalitatea hardware
+4. Pini utilizați pe ESP32-C6 și justificare
+5. Observatii
+
+## 0. Descriere Generală:
+Proiectul a avut ca scop realizarea unui Ebook Reader ieftin si OpenSource din
+perspectiva unui Arhitect de Sistem. Acest dispozitiv poate fi scos pentru a fi
+produs in masa.
+
+Am urmat toți pașii standard de proiectare, începând de la schematic, continuând
+cu layout-ul PCB, modelare 3D și integrarea finală într-o carcasă.
+
+## 1. Diagrama bloc
 ## 2. BOM - Bill of Materials
 
 | Device | Value | Check_Price | Datasheet |
@@ -41,3 +64,5 @@
 | USBLC6-2SC6Y | USBLC6-2SC6Y | [Link](https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=eda) | [Link](https://www.snapeda.com/parts/USBLC6-2SC6Y/STMicroelectronics/view-part/?ref=eda) |
 | W25Q512JVEIQ | W25Q512JVEIQ | [Link](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda) | [Link](https://www.snapeda.com/parts/W25Q512JVEIQ/Winbond+Electronics/view-part/?ref=eda) |
 | XC6220A331MR-G | XC6220A331MR-G | [Link](https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6220A331MR-G?qs=AsjdqWjXhJ8ZSWznL1J0gg%3D%3D) | [Link](https://product.torexsemi.com/system/files/series/xc6220.pdf) |
+
+## 3. Functionalitatea hardware
