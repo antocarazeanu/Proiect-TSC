@@ -10,7 +10,7 @@ Cuprins:
 2. BOM - Bill of Materials
 3. Functionalitatea hardware
 4. Pini utilizați pe ESP32-C6 și justificare
-5. Observatii
+5. Probleme intampinate
 
 ## 0. Descriere Generală:
 Proiectul a avut ca scop realizarea unui Ebook Reader ieftin si OpenSource din
@@ -66,3 +66,31 @@ cu layout-ul PCB, modelare 3D și integrarea finală într-o carcasă.
 | XC6220A331MR-G | XC6220A331MR-G | [Link](https://www.mouser.co.uk/ProductDetail/Torex-Semiconductor/XC6220A331MR-G?qs=AsjdqWjXhJ8ZSWznL1J0gg%3D%3D) | [Link](https://product.torexsemi.com/system/files/series/xc6220.pdf) |
 
 ## 3. Functionalitatea hardware
+
+## 4. Pini utilizați pe ESP32-C6 și justificare
+
+| Pin ESP32-C6 | Componentă / Semnal                | De ce?                                                                 |
+|--------------|-------------------------------------|------------------------------------------------------------------------|
+| GPIO1        | I²C SDA (BME688, MAX17048, DS3231, Qwiic) | Linie partajată I²C – economisește pini și permite extinderea facilă |
+| GPIO2        | I²C SCL (BME688, MAX17048, DS3231, Qwiic) | Clock I²C pentru toți senzorii și extensii Qwiic                     |
+| GPIO5        | SPI MISO (E-Paper, Flash extern)    | Linie comună de intrare date în SPI                                   |
+| GPIO6        | SPI MOSI (E-Paper, Flash extern)    | Linie de ieșire date către e-paper și flash                           |
+| GPIO7        | SPI CLK                             | Semnal de clock pentru magistrala SPI                                 |
+| GPIO8        | E-Paper CS                          | Selectează afișajul pe magistrala SPI                                 |
+| GPIO9        | E-Paper DC (Data/Command)           | Comută între comandă și date către e-paper                            |
+| GPIO10       | E-Paper RST                         | Reset hardware e-paper                                                |
+| GPIO11       | E-Paper BUSY                        | Pin de stare (ocupat/liber) de la display                             |
+| GPIO12       | Button #1                           | Intrare digitală pentru navigare pagină înainte                      |
+| GPIO13       | Button #2                           | Intrare digitală pentru navigare pagină înapoi                       |
+| GPIO14       | Button #3                           | Intrare digitală pentru selectare/opțiune                            |
+| GPIO15       | MAX17048 ALERT (opțional)           | Pin de alertă nivel scăzut baterie                                    |
+| GPIO16       | USB D+ (intern la USB PHY)          | Linie USB 2.0 (fixă pe ESP32-C6)                                      |
+| GPIO17       | USB D- (intern la USB PHY)          | Linie USB 2.0 (fixă pe ESP32-C6)                                      |
+| GPIO18       | LED Status (opțional)               | Indicator pentru activitate Wi-Fi, charging, notificări               |
+| GPIO19       | SD Card CS                          | Selectare chip pentru card microSD (SPI)                              |
+| GPIO20       | SD Card MISO                        | Citire date de pe card microSD                                        |
+| GPIO21       | SD Card MOSI                        | Scriere date pe card microSD                                          |
+| GPIO4        | SD Card CLK                         | Semnal de clock pentru card microSD (SPI)                             |
+
+## 5. Probleme intampinate
+
