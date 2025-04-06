@@ -21,6 +21,7 @@ Am urmat toți pașii standard de proiectare, începând de la schematic, contin
 cu layout-ul PCB, modelare 3D și integrarea finală într-o carcasă.
 
 ## 1. Diagrama bloc
+![Diagrama](Images/diagrama.png)
 
 ## 2. BOM - Bill of Materials
 | Device | Value | Check_Price | Datasheet |
@@ -209,3 +210,7 @@ Descriem în continuare componentele hardware cheie și funcționalitatea acesto
 1) La partea de 3D am întâmpinat o problemă semnificativă — modelele 3D ale rezistențelor și condensatoarelor nu se actualizau automat în PCB atunci când încercam să folosesc funcția Replace Package. Pentru a rezolva această problemă, a trebuit să adaug manual modelele 3D custom realizate pentru fiecare componentă în parte.
 
 2) Bobina si mufa USB au avut dimensiunea pad-urilor mai mica decat grosimea firelor, marint astfel pad-urile din footprint pentru a putea face lipirea.
+
+## 6. Observatii
+Un proiect mult prea muncitoresc care nu merita doar 2pct din nota.
+Timp de lucru aprox ~70h
